@@ -1,5 +1,6 @@
 package p1MainClasses;
 
+import dataGenerator.DataReader;
 import interfaces.MySet;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
@@ -20,7 +21,6 @@ public class P1andP2<E> extends AbstractIntersectionFinder{
 		
 		//REMEMBER TO CHNGE THIS
 		MySet<E> result = null;
-		
 		
 		return result;
 	}

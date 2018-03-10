@@ -7,8 +7,14 @@ package p1MainClasses;
  *
  */
 
+
+//Leer Data generada por FilesGeneratorMain
+//Enviar dicha data a P1andP2, P3 y P4
+
 public class Part1Main {
 
-	
-	
+	  public static void main(String[] args) {
+		  
+		  
+	  }
 }
