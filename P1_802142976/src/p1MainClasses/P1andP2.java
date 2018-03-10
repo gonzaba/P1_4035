@@ -3,17 +3,26 @@ package p1MainClasses;
 import interfaces.MySet;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
-public class P1andP2 extends AbstractIntersectionFinder {
+/**
+ * 
+ * @author Barbara P. Gonzalez 802-14-2976
+ *
+ */
+
+public class P1andP2<E> extends AbstractIntersectionFinder {
 
 	public P1andP2(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public MySet intersectSets(MySet[] t) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		//REMEMBER TO CHNGE THIS
+		MySet<E> result = null;
+		
+		
+		return result;
 	}
 
 	

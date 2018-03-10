@@ -3,6 +3,11 @@ package p1MainClasses;
 import interfaces.MySet;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
+/**
+ * 
+ * @author Barbara P. Gonzalez 802-14-2976
+ *
+ */
 public class P4 extends AbstractIntersectionFinder {
 
 	public P4(String name) {
