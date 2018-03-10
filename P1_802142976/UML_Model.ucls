@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="mySetImplementations.Set2" project="P1_802142976" 
     file="/P1_802142976/src/mySetImplementations/Set2.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="478" y="409"/>    
+    <position height="-1" width="-1" x="485" y="413"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </class>  
   <class id="11" language="java" name="p1MainClasses.P1andP2" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/P1andP2.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="742" y="936"/>    
+    <position height="-1" width="-1" x="877" y="938"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="p1MainClasses.P3" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/P3.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="724" y="810"/>    
+    <position height="-1" width="-1" x="879" y="812"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="p1MainClasses.P4" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/P4.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="678" y="652"/>    
+    <position height="-1" width="-1" x="881" y="688"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,7 +120,7 @@
   </class>  
   <class id="14" language="java" name="p1MainClasses.Part1Main" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/Part1Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="920" y="329"/>    
+    <position height="-1" width="-1" x="1128" y="886"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -129,7 +129,7 @@
   </class>  
   <class id="15" language="java" name="p1MainClasses.Part2Main" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/Part2Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="788" y="334"/>    
+    <position height="-1" width="-1" x="1125" y="748"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
