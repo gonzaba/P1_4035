@@ -28,6 +28,12 @@ public class Part1Main {
 		//FilesGeneratorMain has already a method to read the arguments or assign a default value.
 		fgm.main(args);
 		
+		//Returns a matrix 3x3 with 
+		//[company][event][phone]
+		
+		//need to save this on a variable
+		
+		
 		dr.readDataFiles();
 		
 		dr.printSets();

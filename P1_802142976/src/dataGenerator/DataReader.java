@@ -28,7 +28,7 @@ public class DataReader {
 	
 	/**
 	 * 
-	 * @return
+	 * @return a matrix 3x3 with information
 	 * @throws FileNotFoundException 
 	 */
 	public Object[][][] readDataFiles() throws FileNotFoundException {
