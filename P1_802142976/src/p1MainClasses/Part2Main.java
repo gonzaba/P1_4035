@@ -3,6 +3,8 @@ package p1MainClasses;
 import java.io.FileNotFoundException;
 
 import dataGenerator.DataReader;
+import setIntersectionFinders.P3;
+import setIntersectionFinders.P4;
 
 /**
  * 
