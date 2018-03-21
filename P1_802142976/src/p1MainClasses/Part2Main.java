@@ -14,6 +14,9 @@ public class Part2Main {
 			  
 			  DataReader dr = new DataReader();
 			  
+			  P1andP2 p1p2result = new P1andP2(null);
+				P3 p3result = new P3(null);
+				P4 p4result = new P4(null);
 		  }
 
 }

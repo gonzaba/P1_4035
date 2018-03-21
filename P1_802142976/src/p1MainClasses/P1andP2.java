@@ -2,6 +2,8 @@ package p1MainClasses;
 
 import dataGenerator.DataReader;
 import interfaces.MySet;
+import mySetImplementations.Set1;
+import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
 /**
@@ -26,5 +28,7 @@ public class P1andP2<E> extends AbstractIntersectionFinder{
 	}
 
 	
+	Set1 set1 = new Set1<Object>();
+	Set2 set2 = new Set2<Object>();
 	
 }

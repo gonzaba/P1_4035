@@ -40,7 +40,7 @@ public interface MySet<E> extends Iterable<E>, Cloneable {
 
     /**
      *  Returns an Iterator object through which all the elements of the
-     *  set can be accessed, one by one, by properly invoking that iteratorâ€™s 
+     *  set can be accessed, one by one, by properly invoking that iterator’s 
      *  methods. 
      */ 
     Iterator<E> iterator(); 

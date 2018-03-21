@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="dataGenerator.DataReader" project="P1_802142976" 
     file="/P1_802142976/src/dataGenerator/DataReader.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1332" y="893"/>    
+    <position height="-1" width="-1" x="1325" y="925"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </interface>  
   <class id="5" language="java" name="mySetImplementations.AbstractMySet" project="P1_802142976" 
     file="/P1_802142976/src/mySetImplementations/AbstractMySet.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="841" y="495"/>    
+    <position height="-1" width="-1" x="696" y="397"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="mySetImplementations.Set2" project="P1_802142976" 
     file="/P1_802142976/src/mySetImplementations/Set2.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="474" y="249"/>    
+    <position height="-1" width="-1" x="374" y="331"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="p1MainClasses.FilesGeneratorMain" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/FilesGeneratorMain.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="481" y="66"/>    
+    <position height="-1" width="-1" x="878" y="141"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <class id="10" language="java" name="testerClasses.DataGeneratorTester" project="P1_802142976" 
     file="/P1_802142976/src/testerClasses/DataGeneratorTester.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="394" y="421"/>    
+    <position height="-1" width="-1" x="341" y="77"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </class>  
   <class id="11" language="java" name="p1MainClasses.P1andP2" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/P1andP2.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="720" y="943"/>    
+    <position height="-1" width="-1" x="702" y="685"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="p1MainClasses.P3" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/P3.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="729" y="799"/>    
+    <position height="-1" width="-1" x="700" y="946"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,23 +111,14 @@
   </class>  
   <class id="13" language="java" name="p1MainClasses.P4" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/P4.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="730" y="659"/>    
+    <position height="-1" width="-1" x="699" y="823"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="p1MainClasses.Part1Main" project="P1_802142976" 
-    file="/P1_802142976/src/p1MainClasses/Part1Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1091" y="910"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="15" language="java" name="p1MainClasses.Part2Main" project="P1_802142976" 
+  <class id="14" language="java" name="p1MainClasses.Part2Main" project="P1_802142976" 
     file="/P1_802142976/src/p1MainClasses/Part2Main.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1319" y="701"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
@@ -136,78 +127,131 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
+  <class id="15" language="java" name="p1MainClasses.Part1Main" project="P1_802142976" 
+    file="/P1_802142976/src/p1MainClasses/Part1Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="954" y="955"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
   <generalization id="16">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="5"/>  
-  </generalization>  
-  <dependency id="17">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="12"/>  
-  </dependency>  
-  <generalization id="18">    
     <end type="SOURCE" refId="13"/>    
     <end type="TARGET" refId="9"/>  
   </generalization>  
-  <dependency id="19">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="11"/>  
-  </dependency>  
-  <dependency id="20">    
-    <end type="SOURCE" refId="11"/>    
+  <realization id="17">    
+    <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <realization id="21">    
+  </realization>  
+  <realization id="18">    
     <end type="SOURCE" refId="9"/>    
     <end type="TARGET" refId="3"/>  
   </realization>  
-  <generalization id="22">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="5"/>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
   </generalization>  
+  <dependency id="20">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="21">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="22">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
   <dependency id="23">    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="1"/>  
   </dependency>  
   <dependency id="24">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="25">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <dependency id="26">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <realization id="27">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <dependency id="28">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="1"/>  
-  </dependency>  
-  <dependency id="29">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="7"/>  
-  </dependency>  
-  <generalization id="30">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="9"/>  
-  </generalization>  
-  <dependency id="31">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
-  <dependency id="32">    
     <end type="SOURCE" refId="14"/>    
     <end type="TARGET" refId="2"/>  
   </dependency>  
-  <generalization id="33">    
+  <dependency id="25">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <association id="27">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="28" name="set1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="30">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="31">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="32" name="set2">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="33" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="34">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="35">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <dependency id="36">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="37">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="38">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="39">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="40">    
     <end type="SOURCE" refId="12"/>    
     <end type="TARGET" refId="9"/>  
   </generalization>  
+  <dependency id="41">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="42">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="5"/>  
+  </generalization>  
+  <dependency id="44">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
