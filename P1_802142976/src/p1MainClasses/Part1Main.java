@@ -1,11 +1,8 @@
 package p1MainClasses;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
-
-import dataGenerator.DataReader;
 import setIntersectionFinders.AbstractIntersectionFinder;
 import setIntersectionFinders.P1andP2;
 import setIntersectionFinders.P3;
@@ -17,7 +14,6 @@ import setIntersectionFinders.P4;
  * @author Ramineh Lopez - 402-12-3657
  *
  */
-
 
 
 
@@ -33,7 +29,6 @@ import setIntersectionFinders.P4;
 
 
 public class Part1Main {
-
 	public static <E> void main(String[] args) throws IOException{
 					int co,cr;
 				
@@ -77,14 +72,7 @@ public class Part1Main {
 				if (x.equals("1") || x.equals("0")) System.out.println("The Final Set by P1:  "   +af.intersectSets(af.createSets2(myData)).toString());   
 				if (x.equals("2") || x.equals("0")) System.out.println("The Final Set by P2:  "   +af2.intersectSets(af.createSets2(myData)).toString());
 				if (x.equals("3") || x.equals("0")) System.out.println("The Final Set by P3:  "   +af3.intersectSets(af.createSets2(myData)).toString());
-				if (x.equals("4") || x.equals("0")) System.out.println("The Final Set by P4:  "   +af4.intersectSets(af.createSets2(myData)).toString());
-	
-		  
-		  
-		  
-		  
-		  
-		  
+				if (x.equals("4") || x.equals("0")) System.out.println("The Final Set by P4:  "   +af4.intersectSets(af.createSets2(myData)).toString()); 
 		  
 		  
 		  

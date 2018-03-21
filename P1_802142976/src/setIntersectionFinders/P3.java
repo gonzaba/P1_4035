@@ -14,16 +14,11 @@ import java.util.ArrayList;
 public class P3<E> extends AbstractIntersectionFinder<E>  {
 	
 	private Set2<E> element1s; 
-	 private String name;
+	private String name;
 	 
 	public P3(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
-	
-	
-		
-		// TODO Auto-generated constructor stub
 	
 	public P3() {
 		element1s=new Set2<E>();
@@ -31,6 +26,7 @@ public class P3<E> extends AbstractIntersectionFinder<E>  {
 	
 	
 
+	@SuppressWarnings("unchecked")
 	public MySet<E> intersectSets(MySet<E>[] t) {
 		MySet<E> finalT=new Set2<E>();
 		
@@ -53,7 +49,7 @@ public class P3<E> extends AbstractIntersectionFinder<E>  {
 			}
 			
 			else {
-				if (c==cr) finalT.add( (E) e);
+				if (c==cr) finalT.add((E) e);
 					
 				e= allElements.get(i);
 				c=1;									

@@ -20,11 +20,10 @@ public class P4<E> extends AbstractIntersectionFinder<E>{
 
 	public P4(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
+	
 	}
 	public P4() {
-		
-	}	// TODO Auto-generated constructor stub
+	}	
 	
 	@Override
 	public MySet<E> intersectSets(MySet<E>[] t) {
@@ -54,10 +53,6 @@ public class P4<E> extends AbstractIntersectionFinder<E>{
 
 		}
 			
-		
-		
-		
-		
 		
 		return finalT;
 	}

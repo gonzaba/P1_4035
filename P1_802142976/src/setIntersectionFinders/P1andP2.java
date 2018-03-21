@@ -17,24 +17,22 @@ import mySetImplementations.Set2;
 
 
 public class  P1andP2<E> extends AbstractIntersectionFinder<E>{
+	
 	  private Set1<E> element1s; 
 	  private Set2<E> element2s; 
 	  private String name;
 	  private int co;
 	  private int cr;
-
-	public P1andP2(String name) {
-		super(name);
-		
+	  
+	  public P1andP2(String name) {
+		  super(name);
+	  }
+	  
+	  public P1andP2() {
+		  element1s=new Set1<E>();
+	  }
 	
-		
-		// TODO Auto-generated constructor stub
-	}
-	public P1andP2() {
-		element1s=new Set1<E>();
-	}
-	
-// This method return an array of sets. Each element of this array holds a set of the values 
+	 // This method return an array of sets. Each element of this array holds a set of the values 
 	//provided by all telephone companies for that particular crime.
 	@Override
 	
