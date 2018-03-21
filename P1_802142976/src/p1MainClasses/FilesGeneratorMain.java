@@ -28,7 +28,7 @@ public class FilesGeneratorMain {
  
 	}
 
-	private static void generateFiles(int n, int m, int size) throws FileNotFoundException {
+	public static void generateFiles(int n, int m, int size) throws FileNotFoundException {
 		String parentDirectory = "inputFiles";   // must exist in current directory
 		DataGenerator dg = new DataGenerator(n, m, size);
 		Object[][][] setsLists = dg.generateData();  
