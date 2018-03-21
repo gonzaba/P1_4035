@@ -8,9 +8,11 @@ import setIntersectionFinders.P4;
 
 /**
  * 
- * @author Barbara P. Gonzalez 802-14-2976
+ * @author Bárbara P. González Rivera - 802-14-2976
+ * @author Ramineh Lopez - 402-12-3657
  *
  */
+
 public class Part2Main {
 		  public static void main(String[] args) throws FileNotFoundException {
 			  

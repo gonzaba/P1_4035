@@ -1,12 +1,16 @@
 package setIntersectionFinders;
 
 import interfaces.MySet;
-import mySetImplementations.Set1;
 import mySetImplementations.Set2;
-
 import java.util.ArrayList;
 
-import interfaces.IntersectionFinder;
+/**
+ * 
+ * @author Bárbara P. González Rivera - 802-14-2976
+ * @author Ramineh Lopez - 402-12-3657
+ *
+ */
+
 public class P3<E> extends AbstractIntersectionFinder<E>  {
 	
 	private Set2<E> element1s; 

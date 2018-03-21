@@ -1,15 +1,20 @@
 package setIntersectionFinders;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Iterator;
-
-import dataGenerator.DataGenerator;
-import interfaces.IntersectionFinder;
 import interfaces.MySet;
 import mySetImplementations.Set1;
 import mySetImplementations.Set2;
+
+
+
+/**
+ * 
+ * @author Bárbara P. González Rivera - 802-14-2976
+ * @author Ramineh Lopez - 402-12-3657
+ *
+ */
+
 
 public class  P1andP2<E> extends AbstractIntersectionFinder<E>{
 	  private Set1<E> element1s; 

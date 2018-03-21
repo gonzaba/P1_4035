@@ -8,6 +8,14 @@ import java.util.Map.Entry;
 import interfaces.MySet;
 import mySetImplementations.Set2;
 
+
+/**
+ * 
+ * @author Bárbara P. González Rivera - 802-14-2976
+ * @author Ramineh Lopez - 402-12-3657
+ *
+ */
+
 public class P4<E> extends AbstractIntersectionFinder<E>{
 
 	public P4(String name) {
