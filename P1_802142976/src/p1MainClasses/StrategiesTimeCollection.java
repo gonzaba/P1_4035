@@ -3,6 +3,7 @@ package p1MainClasses;
 import java.util.ArrayList;
 import java.util.Map;
 
+import interfaces.IntersectionFinder;
 import setIntersectionFinders.AbstractIntersectionFinder;
 
 
@@ -25,15 +26,15 @@ import setIntersectionFinders.AbstractIntersectionFinder;
  */
 @SuppressWarnings("serial")
 public class StrategiesTimeCollection<E extends Comparable<E>> extends ArrayList<Map.Entry<Integer, Float>> { 
-    private AbstractIntersectionFinder<E> strategy;    // the strategy
+    private IntersectionFinder<E> strategy;    // the strategy
     private float sum;   
     // variable to accumulate the sum of times that different
     // executions for the same time take. It is eventually used
     // to determine the average execution time for a particular 
     // size.....
     
-    public StrategiesTimeCollection(AbstractIntersectionFinder<E> strategy) { 
-        this.strategy = strategy; 
+    public StrategiesTimeCollection(IntersectionFinder<E> af) { 
+        this.strategy = af; 
     } 
     
     public String getStrategyName() { 

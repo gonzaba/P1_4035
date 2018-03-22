@@ -15,5 +15,6 @@ public interface IntersectionFinder<E> {
 	 * @return the final intersection set (the result of intersecting all sets in t)
 	 */
 	MySet<E> intersectSets(MySet<E>[] t);
-	String getName(); 
+	String getName();
+	void experimentallyExecuteStrategy(Integer[][][] dataset); 
 }

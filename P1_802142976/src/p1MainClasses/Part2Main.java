@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.AbstractMap;
 
 import dataGenerator.DataReader;
+import interfaces.IntersectionFinder;
 import setIntersectionFinders.AbstractIntersectionFinder;
 import setIntersectionFinders.P1andP2;
 import setIntersectionFinders.P3;
@@ -22,7 +23,7 @@ import java.util.ArrayList;
 public class Part2Main {
 	
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static <E> void main(String[] args) throws FileNotFoundException {
 		// Parm1: initial size
 		// Parm2: trials per size
 		// Parm3: incremental steps (size)
@@ -30,26 +31,30 @@ public class Part2Main {
 		
 		ExperimentController ec = new ExperimentController(50, 200, 50, 1000);
 				
+		
+		
+		
+		IntersectionFinder<E> af= new P1andP2<E>("p1");
+		IntersectionFinder<E> af2=new P1andP2<E>("p2");
+		IntersectionFinder<E> af3=new P3<E>();
+		IntersectionFinder<E> af4=new P4<E>();
+		
 	
+		ec.addStrategy(new StrategiesTimeCollection<Integer>((IntersectionFinder<Integer>) af)); 
+		ec.addStrategy(new StrategiesTimeCollection<Integer>((IntersectionFinder<Integer>) af2)); 
+		ec.addStrategy(new StrategiesTimeCollection<Integer>((IntersectionFinder<Integer>) af3)); 
+		ec.addStrategy(new StrategiesTimeCollection<Integer>((IntersectionFinder<Integer>) af4)); 
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		AbstractIntersectionFinder<E> af=new P1andP2<E>("p1");
-		AbstractIntersectionFinder<E> af2=new P1andP2<E>("p2");
-		AbstractIntersectionFinder<E> af3=new P3<E>();
-		AbstractIntersectionFinder<E> af4=new P4<E>();
-		
-		ec.addStrategy(new StrategiesTimeCollection<Integer>( new P1andP2<E>("p1"))); 
-		ec.addStrategy(new StrategiesTimeCollection<Integer>(new ??? )); 
-		ec.addStrategy(new StrategiesTimeCollection<Integer>(new ??? )); 
 		
 		ec.run();
+		
+		
+		try {
+			ec.saveResults();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} //end of catch
 		
 		  }//end of main
 
