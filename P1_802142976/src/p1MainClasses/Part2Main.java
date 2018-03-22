@@ -24,20 +24,23 @@ public class Part2Main {
 	
 
 	public static <E> void main(String[] args) throws FileNotFoundException {
-		// Parm1: initial size
-		// Parm2: trials per size
-		// Parm3: incremental steps (size)
-		// Parm4: last size to consider
+		// Parm1: number of companies
+		// Parm2: number of crimes
+		// Parm3: initial size
+		// Parm4: trials per size
+		// Parm5: incremental steps (size)
+		// Parm6: last size to consider
 		
-		ExperimentController ec = new ExperimentController(50, 200, 50, 1000);
-				
+		String x="0";
+		if(args.length>0)x=args[0];
 		
 		
+		ExperimentController ec = new ExperimentController(2, 2, 2, 2, 2, 2);
 		
 		IntersectionFinder<E> af= new P1andP2<E>("p1");
 		IntersectionFinder<E> af2=new P1andP2<E>("p2");
-		IntersectionFinder<E> af3=new P3<E>();
-		IntersectionFinder<E> af4=new P4<E>();
+		IntersectionFinder<E> af3=new P3<E>("p3");
+		IntersectionFinder<E> af4=new P4<E>("p4");
 		
 	
 		ec.addStrategy(new StrategiesTimeCollection<Integer>((IntersectionFinder<Integer>) af)); 

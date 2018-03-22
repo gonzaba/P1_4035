@@ -18,10 +18,10 @@ public class ExperimentController {
 	
 	
 
-	private int n = 10; 	             //n = number of companies
-	private int m = 10;                  //m = number of crime events
-	private int initialSize = 5;         //initialSize = the initial size of experimentations
-	private int finalSize = 5;           //finalSize = final size of experimentations
+	private int n = 2; 	             //n = number of companies
+	private int m = 2;                  //m = number of crime events
+	private int initialSize = 2;         //initialSize = the initial size of experimentations
+	private int finalSize = 2;           //finalSize = final size of experimentations
 	private int incrementalSizeStep = 2; //incrementalSizeStep = increment of sizes
 	private int repetitionsPerSize = 2;  //rep - number of repetitions for a each size
 	
@@ -32,12 +32,14 @@ public class ExperimentController {
 	// pairs (n, t), where t is the estimated time for size n for
 	// the strategy at that position. 
 	
-	ExperimentController(int is, int rps, int iss, int fs){
+	ExperimentController(int n1, int m1, int is, int rps, int iss, int fs){
 		initialSize = is;
 		repetitionsPerSize = rps;
 		incrementalSizeStep = iss;
 		finalSize = fs;
 		resultsPerStrategy = new ArrayList<>();
+		n = n1;
+		m = m1;
 	}
 	
 	public void addStrategy(StrategiesTimeCollection<Integer> strategy) { 
