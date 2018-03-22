@@ -37,7 +37,6 @@ public class P3<E> extends AbstractIntersectionFinder<E>  {
 			
 			for (E e: t[i]) {
 				allElements.add( (Integer) e);
-				
 			}
 		}
 		allElements.sort(null);
@@ -49,8 +48,10 @@ public class P3<E> extends AbstractIntersectionFinder<E>  {
 			}
 			
 			else {
-				if (c==cr) finalT.add((E) e);
-					
+				if (c==cr) {
+					finalT.add((E) e);
+				}
+				
 				e= allElements.get(i);
 				c=1;									
 				

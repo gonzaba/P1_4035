@@ -21,6 +21,7 @@ import java.util.Map;
  * @author pedroirivera-vega
  *
  */
+@SuppressWarnings("serial")
 public class StrategiesTimeCollection<E extends Comparable<E>> extends ArrayList<Map.Entry<Integer, Float>> { 
     private AbstractStrategyToTest<E> strategy;    // the strategy
     private float sum;   
