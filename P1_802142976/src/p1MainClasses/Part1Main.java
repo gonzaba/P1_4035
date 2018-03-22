@@ -30,7 +30,8 @@ import setIntersectionFinders.P4;
 
 public class Part1Main {
 	public static <E> void main(String[] args) throws IOException{
-					int co,cr;
+				
+				int co,cr;
 				
 				String parentDirectory = "inputFiles";
 				Scanner parameters = new Scanner(new File(parentDirectory, "parameters.txt"));
@@ -65,39 +66,19 @@ public class Part1Main {
 				AbstractIntersectionFinder<E> af2=new P1andP2<E>("p2");
 				AbstractIntersectionFinder<E> af3=new P3<E>();
 				AbstractIntersectionFinder<E> af4=new P4<E>();
+				
+				//
 				String x="0";
 				if(args.length>0)x=args[0];
 				
-				 
+				//Verifies that when called class if called in cmd, it runs the wanted class. 
 				if (x.equals("1") || x.equals("0")) System.out.println("The Final Set by P1:  "   +af.intersectSets(af.createSets2(myData)).toString());   
 				if (x.equals("2") || x.equals("0")) System.out.println("The Final Set by P2:  "   +af2.intersectSets(af.createSets2(myData)).toString());
 				if (x.equals("3") || x.equals("0")) System.out.println("The Final Set by P3:  "   +af3.intersectSets(af.createSets2(myData)).toString());
 				if (x.equals("4") || x.equals("0")) System.out.println("The Final Set by P4:  "   +af4.intersectSets(af.createSets2(myData)).toString()); 
 		  
-		  
-		  
-		  
-		  	//DataReader dr = new DataReader();
-
-			//FilesGeneratorMain fgm = new FilesGeneratorMain();
-
-			//Calling the FilesGeneratorMain to read the files
-			
-			
-			//tells the FilesGeneratorMain to read the arguments given by user 
-			//when calling part1main by cmd and giving the numbers
-			//FilesGeneratorMain has already a method to read the arguments or assign a default value.
-		//	fgm.main(args);
-			
-			//Returns a matrix 3x3 with 
-			//[company][event][phone]
-			
-			//need to save this on a variable
-			
-			
-			//dr.readDataFiles();
-			
-			//dr.printSets();
+		 		
+		
 		
 	
 		  

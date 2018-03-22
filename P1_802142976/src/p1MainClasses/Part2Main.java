@@ -31,7 +31,12 @@ public class Part2Main {
 		ExperimentController ec = new ExperimentController(50, 200, 50, 1000);
 				
 	
-		ec.addStrategy(new StrategiesTimeCollection<Integer>(new ??? )); 
+		AbstractIntersectionFinder<E> af=new P1andP2<E>("p1");
+		AbstractIntersectionFinder<E> af2=new P1andP2<E>("p2");
+		AbstractIntersectionFinder<E> af3=new P3<E>();
+		AbstractIntersectionFinder<E> af4=new P4<E>();
+		
+		ec.addStrategy(new StrategiesTimeCollection<Integer>( new P1andP2<E>("p1"))); 
 		ec.addStrategy(new StrategiesTimeCollection<Integer>(new ??? )); 
 		ec.addStrategy(new StrategiesTimeCollection<Integer>(new ??? )); 
 		
