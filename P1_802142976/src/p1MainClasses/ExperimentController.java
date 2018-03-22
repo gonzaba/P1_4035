@@ -1,8 +1,17 @@
 package p1MainClasses;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.AbstractMap;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.Scanner;
+
+import setIntersectionFinders.AbstractIntersectionFinder;
+import setIntersectionFinders.P1andP2;
+import setIntersectionFinders.P3;
+import setIntersectionFinders.P4;
 
 public class ExperimentController {
 
@@ -35,7 +44,7 @@ public class ExperimentController {
 		resultsPerStrategy.add(strategy); 
 	}
 	
-	public void run() {
+	public void run() throws FileNotFoundException {
 		if(resultsPerStrategy.isEmpty()) {
 			throw new IllegalStateException("No strategy has been added.");
 		}
@@ -93,7 +102,39 @@ public class ExperimentController {
 				out.println(e.getKey()+ "\t" + e.getValue());
 			
 			out.close(); 
-		}
-
-	}//end of saveResults()
-}
+		}//end of for
+		
+	}//end of  saveResults
+		
+		
+		
+	public Integer[][][] generateFiles(int n,int m,int size) throws FileNotFoundException{
+		int co,cr;
+		
+		String parentDirectory = "inputFiles";
+		Scanner parameters = new Scanner(new File(parentDirectory, "parameters.txt"));
+		co = parameters.nextInt();
+		cr = parameters.nextInt();
+		
+	//	System.out.println("Company " + co + "  Crime  "+ cr);
+		parameters.close();
+		Integer[][][] myData=new Integer[co][cr][5000];
+		
+		for (int i=0;i<co; i++) {
+			for (int j=0;j<cr; j++) {
+				Scanner inFile1 = new Scanner(new File("inputFiles/F_"+i+"_"+j+".txt"));
+				int k=0;
+				while(inFile1.hasNext()){
+				        // how can I create array from text read?
+				        // find next line
+					String  token1 = inFile1.nextLine();
+					int token2=Integer.parseInt(token1);
+					myData[i][j][k]=token2;
+					k++;
+				}//end of while
+			}//end of for
+		}//end of for
+		return myData;
+	}//end of generatefiles class
+	
+}//end of experimentalController

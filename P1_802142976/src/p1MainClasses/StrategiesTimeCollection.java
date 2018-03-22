@@ -3,6 +3,8 @@ package p1MainClasses;
 import java.util.ArrayList;
 import java.util.Map;
 
+import setIntersectionFinders.AbstractIntersectionFinder;
+
 
 /**
  * An object of this type will contain the results of random experiments
@@ -23,14 +25,14 @@ import java.util.Map;
  */
 @SuppressWarnings("serial")
 public class StrategiesTimeCollection<E extends Comparable<E>> extends ArrayList<Map.Entry<Integer, Float>> { 
-    private AbstractStrategyToTest<E> strategy;    // the strategy
+    private AbstractIntersectionFinder<E> strategy;    // the strategy
     private float sum;   
     // variable to accumulate the sum of times that different
     // executions for the same time take. It is eventually used
     // to determine the average execution time for a particular 
     // size.....
     
-    public StrategiesTimeCollection(AbstractStrategyToTest<E> strategy) { 
+    public StrategiesTimeCollection(AbstractIntersectionFinder<E> strategy) { 
         this.strategy = strategy; 
     } 
     
@@ -38,8 +40,8 @@ public class StrategiesTimeCollection<E extends Comparable<E>> extends ArrayList
         return strategy.getName(); 
     }
     
-    public void runTrial(ArrayList<E> dataSet) { 
-    	strategy.experimentallyExecuteStrategy(dataSet);
+    public void runTrial(Integer[][][] dataset) { 
+    	strategy.experimentallyExecuteStrategy(dataset);
     }
     
     public void resetSum() { 

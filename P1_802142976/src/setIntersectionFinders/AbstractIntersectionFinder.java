@@ -43,6 +43,12 @@ implements IntersectionFinder<E> {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	//autocreated because of StrategiesTimeCollection
+	public void experimentallyExecuteStrategy(Integer[][][] dataset) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	
 

@@ -31,6 +31,15 @@ public class Part2Main {
 		ExperimentController ec = new ExperimentController(50, 200, 50, 1000);
 				
 	
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		AbstractIntersectionFinder<E> af=new P1andP2<E>("p1");
 		AbstractIntersectionFinder<E> af2=new P1andP2<E>("p2");
 		AbstractIntersectionFinder<E> af3=new P3<E>();
