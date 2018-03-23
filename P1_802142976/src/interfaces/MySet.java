@@ -80,4 +80,3 @@ public interface MySet<E> extends Iterable<E>, Cloneable {
      */
     Object[] toArray(); 
 }
-

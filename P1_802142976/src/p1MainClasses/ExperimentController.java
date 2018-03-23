@@ -18,12 +18,12 @@ public class ExperimentController {
 	
 	
 
-	private int n = 10; 	             //n = number of companies
-	private int m = 50;                  //m = number of crime events
-	private int initialSize = 10;         //initialSize = the initial size of experimentations
-	private int finalSize = 500;           //finalSize = final size of experimentations
-	private int incrementalSizeStep = 10; //incrementalSizeStep = increment of sizes
-	private int repetitionsPerSize = 3;  //rep - number of repetitions for a each size
+	private int n; 	             //n = number of companies
+	private int m;                  //m = number of crime events
+	private int initialSize;         //initialSize = the initial size of experimentations
+	private int finalSize;           //finalSize = final size of experimentations
+	private int incrementalSizeStep; //incrementalSizeStep = increment of sizes
+	private int repetitionsPerSize;  //rep - number of repetitions for a each size
 	
 	private ArrayList<StrategiesTimeCollection<Integer>> resultsPerStrategy; 
 	
@@ -32,7 +32,7 @@ public class ExperimentController {
 	// pairs (n, t), where t is the estimated time for size n for
 	// the strategy at that position. 
 	
-	public ExperimentController(int n1, int m1, int is, int rps, int iss, int fs){
+	ExperimentController(int n1, int m1, int is, int rps, int iss, int fs){
 		initialSize = is;
 		repetitionsPerSize = rps;
 		incrementalSizeStep = iss;
@@ -76,7 +76,7 @@ public class ExperimentController {
 			  //for#4
 			  for (StrategiesTimeCollection<Integer> strategy : resultsPerStrategy) {	
 				  long startTime = System.nanoTime();  // Measure system’s clock time before.
-				  strategy.runTrial(dataset.clone());          // Run the strategy using the data in dataset.        
+				  strategy.runTrial(dataset);          // Run the strategy using the data in dataset.        
 				  long endTime = System.nanoTime();    // Measure system’s clock time after.
 
                    int estimatedTime = (int) (endTime-startTime);   // The estimated time.
@@ -90,39 +90,21 @@ public class ExperimentController {
 		  for (StrategiesTimeCollection<Integer> strategy : resultsPerStrategy)
 			  strategy.add( new AbstractMap.SimpleEntry<Integer, Float> (size, (strategy.getSum()/((float) repetitionsPerSize))));
 		
-			System.out.println(size); 
+			System.out.println(n); 
 	}//end of for #1
 	}//end of run()
 	
 	public void saveResults() throws FileNotFoundException { 
 		
-		PrintStream out = new PrintStream(new File("experimentalResults", "allResults.txt"));
-		out.print("Size");
-		boolean p1b = false;
-		boolean p2b = false;
-		for (StrategiesTimeCollection<Integer> trc : resultsPerStrategy) 
-			if(p1b==false && p2b==false) {
-				p1b=true;
-			out.print("\t" + "p1"); 
-			}
-			else if(p1b==true && p2b==false) {
-				p2b=true;
-				out.print("\t" + "p2"); 
-			}
-			else {
-				out.print("\t" + trc.getStrategyName()); 
-			}
-		out.println();
-		
-		int numberOfExperiments = resultsPerStrategy.get(0).size(); 
-		for (int i=0; i<numberOfExperiments; i++) {
-			out.print(resultsPerStrategy.get(0).get(i).getKey());
-			for (StrategiesTimeCollection<Integer> trc : resultsPerStrategy)
-				out.print("\t" + trc.get(i).getValue());
-			out.println(); 
-		}
+		for (StrategiesTimeCollection<Integer> trc : resultsPerStrategy) {
+			String fileName = "results"+trc.getStrategyName()+".txt"; 
+			PrintStream out = new PrintStream(new File("experimentalResults", fileName)); 
+
+			for (Map.Entry<Integer, Float> e : trc)
+				out.println(e.getKey()+ "\t" + e.getValue());
 			
-		out.close(); 
+			out.close(); 
+		}//end of for
 		
 	}//end of  saveResults
 		

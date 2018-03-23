@@ -22,24 +22,20 @@ import java.util.ArrayList;
 
 public class Part2Main {
 	
-	public static int[] parms = {10, 50, 100, 50000, 1000, 200};
-		
-	
 
 	public static <E> void main(String[] args) throws FileNotFoundException {
-		if(args.length>6)
-			System.out.println("Unexpected number of parameters. Must me <= 6.");
-		
-		for (int i=0; i<args.length; i++)
-			parms[i] = Integer.parseInt(args[i]); 		
 		// Parm1: number of companies
 		// Parm2: number of crimes
 		// Parm3: initial size
 		// Parm4: trials per size
 		// Parm5: incremental steps (size)
 		// Parm6: last size to consider
-				
-		ExperimentController ec = new ExperimentController(parms[0], parms[1], parms[2], parms[3], parms[4], parms[5]);
+		
+		String x="0";
+		if(args.length>0)x=args[0];
+		
+		
+		ExperimentController ec = new ExperimentController(4, 4, 4, 10, 20, 200);
 		
 		IntersectionFinder<E> af= new P1andP2<E>("p1");
 		IntersectionFinder<E> af2=new P1andP2<E>("p2");

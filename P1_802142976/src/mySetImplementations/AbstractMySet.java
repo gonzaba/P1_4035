@@ -59,4 +59,3 @@ public abstract class AbstractMySet<E> implements MySet<E> {
 	public abstract Iterator<E> iterator(); 
 	public abstract Object clone()  throws CloneNotSupportedException; 
 }
-
